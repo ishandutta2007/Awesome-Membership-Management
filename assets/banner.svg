@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="40%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1a1e2e"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bc8cff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-green" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7ee787" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg-grad)"/>
+
+  <!-- Large ambient glow effects (deep background) -->
+  <circle cx="250" cy="150" r="130" fill="url(#glow-blue)">
+    <animate attributeName="r" values="130;155;130" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="250;270;250" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="140" r="110" fill="url(#glow-purple)">
+    <animate attributeName="r" values="110;135;110" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="950;930;950" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="250" r="90" fill="url(#glow-green)">
+    <animate attributeName="r" values="90;110;90" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Animated network connection lines -->
+  <g>
+    <line x1="80" y1="70" x2="280" y2="55" stroke="#58a6ff" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.08;0.28;0.08" dur="5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="280" y1="55" x2="460" y2="240" stroke="#bc8cff" stroke-width="0.6">
+      <animate attributeName="opacity" values="0.06;0.22;0.06" dur="6.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="460" y1="240" x2="680" y2="45" stroke="#58a6ff" stroke-width="0.7">
+      <animate attributeName="opacity" values="0.08;0.25;0.08" dur="7s" repeatCount="indefinite"/>
+    </line>
+    <line x1="680" y1="45" x2="920" y2="255" stroke="#7ee787" stroke-width="0.6">
+      <animate attributeName="opacity" values="0.05;0.2;0.05" dur="5.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="920" y1="255" x2="1120" y2="80" stroke="#bc8cff" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.08;0.25;0.08" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="80" y1="70" x2="460" y2="240" stroke="#7ee787" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.04;0.18;0.04" dur="8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="280" y1="55" x2="680" y2="45" stroke="#58a6ff" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.06;0.2;0.06" dur="7.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="680" y1="45" x2="1120" y2="80" stroke="#58a6ff" stroke-width="0.6">
+      <animate attributeName="opacity" values="0.05;0.22;0.05" dur="9s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="240" x2="460" y2="240" stroke="#bc8cff" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.06;0.18;0.06" dur="6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="920" y1="255" x2="1050" y2="200" stroke="#58a6ff" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.05;0.2;0.05" dur="7s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Animated member nodes (circles) -->
+  <g>
+    <!-- Node 1 - top left -->
+    <circle cx="80" cy="70" r="6" fill="#58a6ff" opacity="0.5">
+      <animate attributeName="cy" values="70;50;70" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="70" r="12" fill="none" stroke="#58a6ff" stroke-width="0.5" opacity="0.2">
+      <animate attributeName="cy" values="70;50;70" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="12;18;12" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.05;0.2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 2 -->
+    <circle cx="280" cy="55" r="8" fill="#bc8cff" opacity="0.45">
+      <animate attributeName="cy" values="55;35;55" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.75;0.45" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="55" r="15" fill="none" stroke="#bc8cff" stroke-width="0.5" opacity="0.15">
+      <animate attributeName="cy" values="55;35;55" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="15;22;15" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.03;0.15" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 3 -->
+    <circle cx="160" cy="240" r="5" fill="#7ee787" opacity="0.4">
+      <animate attributeName="cy" values="240;220;240" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 4 -->
+    <circle cx="460" cy="240" r="7" fill="#58a6ff" opacity="0.4">
+      <animate attributeName="cy" values="240;260;240" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="460" cy="240" r="14" fill="none" stroke="#58a6ff" stroke-width="0.4" opacity="0.15">
+      <animate attributeName="cy" values="240;260;240" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="14;20;14" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.03;0.15" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 5 -->
+    <circle cx="680" cy="45" r="9" fill="#bc8cff" opacity="0.4">
+      <animate attributeName="cy" values="45;65;45" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="45" r="16" fill="none" stroke="#bc8cff" stroke-width="0.5" opacity="0.15">
+      <animate attributeName="cy" values="45;65;45" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="16;24;16" dur="6.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.03;0.15" dur="6.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 6 -->
+    <circle cx="920" cy="255" r="6" fill="#7ee787" opacity="0.45">
+      <animate attributeName="cy" values="255;235;255" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.45;0.75;0.45" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 7 -->
+    <circle cx="1050" cy="200" r="5" fill="#58a6ff" opacity="0.35">
+      <animate attributeName="cy" values="200;180;200" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.65;0.35" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Node 8 -->
+    <circle cx="1120" cy="80" r="7" fill="#bc8cff" opacity="0.4">
+      <animate attributeName="cy" values="80;60;80" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1120" cy="80" r="13" fill="none" stroke="#bc8cff" stroke-width="0.4" opacity="0.15">
+      <animate attributeName="cy" values="80;60;80" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="13;19;13" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.03;0.15" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Extra small floating particles -->
+    <circle cx="400" cy="130" r="2.5" fill="#58a6ff" opacity="0.25">
+      <animate attributeName="cy" values="130;115;130" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="550" cy="260" r="2" fill="#bc8cff" opacity="0.2">
+      <animate attributeName="cy" values="260;245;260" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="170" r="3" fill="#7ee787" opacity="0.2">
+      <animate attributeName="cy" values="170;155;170" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="140" r="2" fill="#58a6ff" opacity="0.2">
+      <animate attributeName="cy" values="140;125;140" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="190" r="2.5" fill="#7ee787" opacity="0.2">
+      <animate attributeName="cy" values="190;175;190" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Horizontal accent line -->
+  <line x1="150" y1="205" x2="1050" y2="205" stroke="url(#accent-line)" stroke-width="0.8"/>
+
+  <!-- FOREGROUND: Title text (always on top) -->
+  <text x="600" y="120" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="bold" fill="white" letter-spacing="1.5">
+    Awesome Membership Management
+  </text>
+
+  <!-- FOREGROUND: Subtitle -->
+  <text x="600" y="160" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#8b949e" letter-spacing="0.5">
+    Top Membership Management Tools Ecosystem
+  </text>
+
+  <!-- FOREGROUND: Tagline -->
+  <text x="600" y="240" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#58a6ff" opacity="0.85" letter-spacing="2">
+    SaaS Platforms &#x2022; Open-Source Projects &#x2022; Association Management &#x2022; Community Engagement
+  </text>
+
+  <!-- Bottom border accent -->
+  <rect x="0" y="296" width="1200" height="4" fill="url(#accent-line)"/>
+</svg>
